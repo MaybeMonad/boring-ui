@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Boring UI
 
-## Getting Started
+Boring UI is a simple and minimalist UI library built with Tailwind CSS and Radix UI. It's designed to provide a set of basic, well-crafted UI components that you can use to build your applications. Just like the shadcn/ui.
 
-First, run the development server:
+## Why "Boring"?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The name "Boring UI" is a tongue-in-cheek reference to the idea that the best user interfaces are often the most unassuming and straightforward. We believe that the most effective UI components are those that prioritize usability, accessibility, and consistency over flashy design trends.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Tailwind CSS-powered**: Boring UI is built on top of Tailwind CSS, providing a utility-first approach to styling and theming.
+- **Radix UI components**: We leverage the well-designed and accessible components from the Radix UI library, including buttons, dropdowns, modals, and more.
+- **Minimal and focused**: Boring UI aims to provide a curated set of essential UI components, without the bloat of a larger UI framework.
+- **Highly customizable**: You can easily customize the styles and behaviors of the Boring UI components to match your brand and design requirements.
+- **Accessible by default**: All Boring UI components are built with accessibility in mind, following best practices for keyboard navigation, screen readers, and more.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing
 
-## Learn More
+We welcome contributions to Boring UI! If you find a bug, have a feature request, or would like to contribute code, please [open an issue](https://github.com/MaybeMonad/boring-ui/issues/new) or submit a pull request.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Boring UI is licensed under the [MIT License](LICENSE).
