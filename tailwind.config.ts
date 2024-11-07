@@ -12,6 +12,7 @@ const config: Config = {
     extend: {
       colors: {
         background: "hsl(var(--background))",
+        dark: "hsl(var(--dark))",
         foreground: "hsl(var(--foreground))",
         card: {
           DEFAULT: "hsl(var(--card))",
@@ -24,9 +25,6 @@ const config: Config = {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
-          background: "hsl(var(--primary-background))",
-          hover: "hsl(var(--primary-hover))",
-          active: "hsl(var(--primary-active))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -54,11 +52,64 @@ const config: Config = {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
+        sidebar: {
+          DEFAULT: "hsl(var(--sidebar-background))",
+          foreground: "hsl(var(--sidebar-foreground))",
+          primary: "hsl(var(--sidebar-primary))",
+          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
+          accent: "hsl(var(--sidebar-accent))",
+          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
+          border: "hsl(var(--sidebar-border))",
+          ring: "hsl(var(--sidebar-ring))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      keyframes: {
+        "up-down": {
+          "0%, 100%": {
+            transform: "translateY(0)",
+          },
+          "50%": {
+            transform: "translateY(-20px)",
+          },
+        },
+        "scale-up-down": {
+          "0%, 100%": {
+            transform: "scale(1)",
+          },
+          "50%": {
+            transform: "scale(1.1)",
+          },
+        },
+        shake: {
+          "0%, 100%": {
+            transform: "translateX(0)",
+          },
+          "10%, 30%, 50%, 70%, 90%": {
+            transform: "translateX(-10px)",
+          },
+          "20%, 40%, 60%": {
+            transform: "translateX(10px)",
+          },
+        },
+        "fade-in-out": {
+          "0%, 100%": {
+            opacity: "0.5",
+          },
+          "50%": {
+            opacity: "1",
+          },
+        },
+      },
+      animation: {
+        "up-down": "up-down 2s ease-in-out infinite",
+        "scale-up-down": "scale-up-down 2s ease-in-out infinite",
+        shake: "shake 1s ease-in-out infinite",
+        "fade-in-out": "fade-in-out 2s ease-in-out infinite",
       },
     },
   },

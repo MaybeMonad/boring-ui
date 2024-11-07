@@ -8,7 +8,12 @@ export function ComponentCard({
 	name,
 }: PropsWithChildren<{ className?: string; name: string }>) {
 	return (
-		<div className={cn("rounded-lg border border-border w-full", className)}>
+		<div
+			className={cn(
+				"rounded-lg border border-border w-full bg-dark",
+				className,
+			)}
+		>
 			<h3 className="text-sm font-semibold text-muted-foreground border-b border-border py-2 px-4">
 				{name}
 			</h3>

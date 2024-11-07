@@ -7,7 +7,7 @@ import { Switch } from "@/components/ui/switch";
 
 export default function Home() {
 	return (
-		<div className="flex flex-col items-center min-h-screen p-8">
+		<div className="flex flex-col items-center min-h-screen p-8 bg-background">
 			<SiteHeader />
 			<div className="grid grid-cols-1 gap-4 mt-8 w-full max-w-screen-md">
 				<ComponentCard name="Button">
